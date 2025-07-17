@@ -16,7 +16,9 @@ use Inertia\Inertia;
 |
 */
 Route::get('/tasks', function () {
-    return Inertia::render('Tasks');
+    return Inertia::render('Tasks', [
+        'user' => auth()->user(),
+    ]);
 });
 
 Route::get('/', function () {

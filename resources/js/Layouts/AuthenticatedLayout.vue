@@ -32,6 +32,7 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </NavLink>
+                                 <a href="/tasks" class="ml-4 hover:underline">Tasks</a>
                             </div>
                         </div>
 
@@ -68,6 +69,7 @@ const showingNavigationDropdown = ref(false);
                                         <DropdownLink :href="route('logout')" method="post" as="button">
                                             Log Out
                                         </DropdownLink>
+                                        <a href="/tasks" class="ml-4 hover:underline">Tasks</a>
                                     </template>
                                 </Dropdown>
                             </div>
